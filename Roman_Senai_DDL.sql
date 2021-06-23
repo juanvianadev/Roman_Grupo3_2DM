@@ -25,8 +25,10 @@ CREATE TABLE Projeto (
 
 	idProjeto			INT PRIMARY KEY IDENTITY,
 	idTema				INT FOREIGN KEY REFERENCES Tema(idTema),
+	nomeProfessor		VARCHAR(100)  NOT NULL,
 	nomeProjeto			VARCHAR(100) UNIQUE NOT NULL,
 	descricaoProjeto	VARCHAR(1000) NOT NULL
 
 );
 GO
+

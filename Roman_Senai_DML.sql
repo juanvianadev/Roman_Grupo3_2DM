@@ -10,9 +10,9 @@ VALUES				('Gestão'),
 					('HQs')
 GO
 
-INSERT INTO Projeto(idTema, nomeProjeto, descricaoProjeto)
-VALUES				(1, 'RomanTeste', 'Projeto usado como teste para a aplicação'),
-					(1, 'Controle de Estoque', 'Projeto usado como teste para a aplicação'),
-					(2, 'Listagem de Personagens', 'Projeto usado como teste para a aplicação')
+INSERT INTO Projeto(idTema, nomeProjeto, nomeProfessor,descricaoProjeto)
+VALUES				(1, 'RomanTeste', 'Jorge Lopez','Projeto usado como teste para a aplicação'),
+					(1, 'Controle de Estoque','Jorge Lopez' ,'Projeto usado como teste para a aplicação'),
+					(2, 'Listagem de Personagens', 'Valéria Gallen','Projeto usado como teste para a aplicação')
 GO
 
