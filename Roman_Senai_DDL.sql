@@ -1,0 +1,34 @@
+CREATE DATABASE Roman_Senai;
+GO
+
+USE Roman_Senai;
+GO
+
+CREATE TABLE Usuario (
+
+	idUsuario			INT PRIMARY KEY IDENTITY,
+	Email				VARCHAR(200) UNIQUE NOT NULL,
+	Senha				VARCHAR(200) NOT NULL
+
+);
+GO
+
+CREATE TABLE Tema (
+
+	idTema				INT PRIMARY KEY IDENTITY,
+	nomeTema			VARCHAR(100) UNIQUE NOT NULL,
+
+);
+GO
+
+CREATE TABLE Projeto (
+
+	idProjeto			INT PRIMARY KEY IDENTITY,
+	idTema				INT FOREIGN KEY REFERENCES Tema(idTema),
+	nomeProfessor		VARCHAR(100)  NOT NULL,
+	nomeProjeto			VARCHAR(100) UNIQUE NOT NULL,
+	descricaoProjeto	VARCHAR(1000) NOT NULL
+
+);
+GO
+
